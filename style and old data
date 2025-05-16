@@ -1,0 +1,179 @@
+ <style>
+            .block-container {
+                padding: 0px;
+                font-size: 18px;
+                background-color: #8dd4ee;
+                margin-top: 30px;
+                height: 100%;
+            }
+            .stTabs [data-baseweb="tab-list"] {
+                gap: 1px;
+                width: 600px;
+                display: flex;
+                justify-content: center;
+                background-color: #0185bc;
+                margin-top: 20px;
+                padding: 1px;
+                font-size: 18px;
+            }
+            .stTabs [data-baseweb="tab"] {
+                height: 40px;
+                white-space: pre-wrap;
+                background-color: Black;
+                border-radius: 14px 14px 10px 10px;
+                gap: 0px;
+                width  : 200px;
+                border-radius: 2px;
+                color: white;
+                font-size: 18px;
+            }
+            .stTabs [aria-selected="false"]:hover {
+                color: black;
+                background-color: white;
+            }
+            .stTabs [aria-selected="true"] {
+                background-color: #8dd4ee;
+                color: black;
+                font-size: 18px;
+            }
+
+            .stTabs-button {
+                background-color: #ffffff;
+                color: #333333;
+                border: 2px solid transparent;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                font-size: 18px;
+            }
+
+            .stTabs-button.active {
+                background-color: #FF5733;
+                color: #ffffff;
+                border-color: #FF5733;
+            }
+            .stTabs-content {
+                margin-top: 10px;
+                padding: 0px;
+                background-color: #8dd4ee;
+                border-radius: 2px;
+                font-size: 18px;
+            }
+            .st-bg {
+                margin-top: 0px;
+                padding: 5px;
+                background-color: #8dd4ee;
+                border-radius: 5px;
+                width: 600px;
+                font-size: 18px;
+                padding-left: 100px;
+                padding-right: 100px;
+                border: 1px solid black;
+            }
+            p {
+                font-weight: 900;
+                margin: 0px;
+            }
+            h1 {
+                font-size: 25px;
+                padding-left: 20px;
+            }
+            h3 {
+                font-size: 20px;
+                text-decoration: underline;
+            }
+            hr {
+                margin: 0px;
+                background-color: black;
+            }
+            .st-bs {
+                background-color: white;
+                border-radius: 3px;
+                padding-left: 3px;
+            }
+            .st-emotion-cache-vk3wp9 {
+                max-width: 800px !important;
+                width: 650px !important;
+                background: #8dd4ee !important;
+            }
+            .st-bd {
+                width: 600px;
+            }
+            .st-emotion-cache-11nsb0r {
+                font-size: 24px;
+                color: rgb(9 57 211);
+            }
+            .st-emotion-cache-1o1mdc6 {
+                color: Black;
+            }
+            .st-emotion-cache-16txtl3 {
+                padding-top: 10px;
+            }
+            .st-emotion-cache-7ym5gk {
+                margin: 5px;
+                color: Black;
+                background: White;
+            }
+            .st-emotion-cache-7ym5gk:hover {
+                border-color: Black;
+                color: Black;
+            }
+            .st-emotion-cache-7ym5gk:visit {
+                border-color: Black;
+                color: Black;
+            }
+            .st-emotion-cache-7ym5gk:active {
+                border-color: White;
+                color: white;
+            }
+            .st-emotion-cache-7ym5gk:focus:not(:active) {
+                border-color: Black;
+                color: Black;
+            }
+            .st-emotion-cache-13ejsyy {
+                color: Black;
+                background: White;
+            }
+            .st-emotion-cache-13ejsyy:hover {
+                border-color: Black;
+                color: Black;
+            }
+            .st-emotion-cache-13ejsyy:visit {
+                border-color: Black;
+                color: Black;
+            }
+            .st-emotion-cache-13ejsyy:active {
+                border-color: White;
+                color: Black;
+            }
+            .st-emotion-cache-13ejsyy:focus:not(:active) {
+                border-color: Black;
+                color: Black;
+            }
+            .st-emotion-cache-ocqkz7 {
+                padding: 10px;
+                margin: 10px;
+                width: 100%;
+            }
+            .st-emotion-cache-90vs21 {
+                padding-bottom: 0px;
+                padding-top: 0px;:
+            }
+            .st-emotion-cache-4oy321 {
+                background-color: #8dd4ee;
+            }
+            .st-emotion-cache-1c7y2kd {
+                background-color: #4cb3e1;
+                color: white;
+            }
+            .st-emotion-cache-1flajlm {
+                margin-bottom: 50px;
+            }
+
+        </style>
+
+
+python -m venv myenv
+myenv\Scripts\activate
+pip install -r requirements.txt
+streamlit run .\frontend.py
